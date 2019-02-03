@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Координати миші</title>
+	<script>
+		document.onmousemove = function (evt) {
+			var d = document.getElementsByTagName("div")[0];
+			var txt = "<b>Координати миші</b><br />"
+			txt += "Горизонтальна координата: <b>" + evt.clientX + "</b><br />";		
+			txt += "Вертикальна координата: &nbsp&nbsp&nbsp<b>" + evt.clientY + "</b> ";
+			d.innerHTML = txt;		
+		}
+    </script>
+</head>
+<body>
+    <div style="width:280px;height:80px;border-style:outset;font-size:15pt;padding:10px;background-color:#f5f5f5;"><b>Координати курсора миші</b></div>
+</body>
+</html>
